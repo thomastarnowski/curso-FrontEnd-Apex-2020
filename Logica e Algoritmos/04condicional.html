@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Condicional</title>
+
+  <script>
+
+    // obter notas
+    var nota1 = parseFloat(prompt("Informe a primeira nota"))
+    var nota2 = parseFloat(prompt("Informe a segunda nota"))
+
+    // media
+    var media = (nota1 + nota2) / 2
+
+    alert(media)
+
+    // condicional 
+    if (media >= 7) {
+      document.write("Aprovado, com media " + media)
+    } else if (media >= 5) {
+      document.write("Em exame, com media " + media)
+    } else {
+      document.write("Reprovado, com media " + media)
+    }
+
+
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
