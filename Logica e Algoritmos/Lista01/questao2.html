@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 2</title>
+
+  <script>
+
+    //mensagem
+    var mensagem = "Escolha o número do pedido"
+    mensagem += "\n\n1) Pizza                -R$ 12,00"
+    mensagem += "\n2) Pão de Queijo  -R$ 4,00"
+    mensagem += "\n3) Macarrão         -R$ 16,00"
+    mensagem += "\n4) Pastel               -R$ 4,50"
+
+    //obter dados
+    var pedido = prompt(mensagem)
+    var pagamento = prompt("Quanto foi o pagamento?")
+
+    //variavel troco
+    var troco
+
+    //condicional
+    if (pedido == 1) {
+      troco = pagamento - 12
+    } else if (pedido == 2) {
+      troco = pagamento - 4
+    } else if (pedido == 3) {
+      troco = pagamento - 16
+    } else if (pedido == 4) {
+      troco = 4.50
+    }
+
+    //exibir
+    if (troco < 0) {
+      document.write("O valor do pagamento é menor que do pedido")
+    } else {
+      document.write("Troco:  R$ " + troco)
+    }
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

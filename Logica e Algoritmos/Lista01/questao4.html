@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questão 4</title>
+
+  <script>
+
+    // Obter dados
+    var centavo1 = prompt("Quantas moedas de R$0,01 você deseja") * 0.01
+    var centavo5 = prompt("Quantas moedas de R$0,05 você deseja") * 0.05
+    var centavo10 = prompt("Quantas moedas de R$0,10 você deseja") * 0.10
+    var centavo25 = prompt("Quantas moedas de R$0,25 você deseja") * 0.25
+    var centavo50 = prompt("Quantas moedas de R$0,50 você deseja") * 0.50
+    var real1 = prompt("Quantas moedas de R$1,00 você deseja") * 1
+
+    // Cálculo
+    var total = centavo1 + centavo5 + centavo10 + centavo25 + centavo50 + real1
+
+    // Exibir
+    document.write("R$ " + total.toFixed(2))
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
