@@ -1,0 +1,14 @@
+Curso realizado no ano de 2020 pela instituição APEX Ensino. Foram 5 meses de curso, altamente focado na área de Front-End. 
+Aprendemos a usar as mais atualizadas ferramentas no mercado, tais como: 
+
+Lógica e Algorítmos;
+HTML;
+CSS;
+Design Responsivo;
+JavaScript;
+TypeScript;
+Node;
+React;
+Angular.
+
+Foram muitas horas de estudo, além do que foi visto na sala de aula, e após o fim do curso tenho buscado aprofundar meus conhecimentos nas tecnologias vistas no curso.
