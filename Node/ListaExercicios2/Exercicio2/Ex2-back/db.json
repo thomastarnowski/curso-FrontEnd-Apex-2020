@@ -1,0 +1,25 @@
+{
+  "receitas": [
+    {
+      "nome": "Bolo de Chocolate",
+      "ingredientes": "bolo1",
+      "modoPreparo": "teste",
+      "quantidadePessoas": "2",
+      "id": 1
+    },
+    {
+      "nome": "Feijoada",
+      "ingredientes": "feijoada",
+      "modoPreparo": "teste2",
+      "quantidadePessoas": "5",
+      "id": 2
+    },
+    {
+      "nome": "Strogonoff de camarão",
+      "ingredientes": "sasasasa",
+      "modoPreparo": "teste3",
+      "quantidadePessoas": "2",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<div class="container">
+
+  <form action="/cadastrar" method="POST" class="formulario">
+    <img src="img/iconeReceita.png" class="item">
+    <input type="text" name="nome" placeholder="Nome da receita" class="item form-control">
+    <textarea name="ingredientes" cols="50" rows="5" placeholder="Ingredientes" class="item form-control"></textarea>
+    <textarea name="modoPreparo" cols="50" rows="5" placeholder="Modo de preparo" class="item form-control"></textarea>
+    <input type="number" name="quantidadePessoas" placeholder="Quantidade de pessoas servidas" class="item form-control">
+    <input type="submit" value="Cadastrar" class="item btn btn-success">
+  </form>
+
+</div>
+
+<table class="table table-bordered table-hover">
+
+
+  {{#each vetor}}
+
+
+  <tr>
+    <td>{{nome}}</td>
+    <td><a href="/saibamais/{{id}}" class="btn btn-info">Saiba mais</a></td>
+    <td><a href="/remover/{{id}}" class="btn btn-danger">Remover</a></td>
+  </tr>
+  {{/each}}
+</table>

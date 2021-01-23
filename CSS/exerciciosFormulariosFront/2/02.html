@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02</title>
+
+  <link rel="stylesheet" href="estilos.css">
+  <!-- Listar cinco produtos, também haverá uma opção para informar o tipo de pagamento (a vista ou a prazo). Se for pago de maneira a vista terá 10% de desconto, caso contrário pagamento integral.
+ -->
+
+  <script>
+
+    function calcular() {
+
+      // Obter o produto
+      var select = parseInt(document.getElementById("opcoes").value)
+
+      // Obter a forma de pagamento
+      var pgto = document.getElementById("avista").checked
+
+
+      // Escolha
+      switch (select) {
+        case 1:
+          if (pgto == true) {
+            alert("Pagamento a vista, total a pagar R$ 3.500")
+          } else {
+            alert("Valor do produto: R$ 3.500,00. Pagamento a prazo: R$ 3850,00. 10x de R$ 385,00")
+          }
+      }
+
+      switch (select) {
+        case 2:
+          if (pgto == true) {
+            alert("Pagamento a vista, total a pagar R$ 1.500")
+          } else {
+            alert("Valor do produto: R$ 1.500,00. Pagamento a prazo: R$ 1.650,00. 10x de R$ 165,00")
+          }
+      }
+
+      switch (select) {
+        case 3:
+          if (pgto == true) {
+            alert("Pagamento a vista, total a pagar R$ 1.800,00")
+          } else {
+            alert("Valor do produto: R$ 1.800,00. Pagamento a prazo: R$ 1.980,00. 10x de R$ 198,00")
+          }
+      }
+
+      switch (select) {
+        case 4:
+          if (pgto == true) {
+            alert("Pagamento a vista, total a pagar R$ 4.000,00")
+          } else {
+            alert("Valor do produto: R$ 4.000,00. Pagamento a prazo: R$ 4.400,00. 10x de R$ 440,00")
+          }
+      }
+
+      switch (select) {
+        case 5:
+          if (pgto == true) {
+            alert("Pagamento a vista, total a pagar R$ 800,00")
+          } else {
+            alert("Valor do produto: R$ 800,00. Pagamento a prazo: R$ 880,00. 10x de R$ 88,00")
+          }
+      }
+
+
+    }
+
+
+
+  </script>
+
+</head>
+
+<body>
+  <form>
+    <img src="https://cdn1.iconfinder.com/data/icons/communication-and-wireless-network-vol-4/520/communication_network_wifi_device_eletronic_wireless_-_29-512.png">
+    <label class="titulo">Bem-vindo à Mega Eletrônicos. Qual produto está procurando?</label>
+
+    <select id="opcoes">
+      <option>Escolha um produto</option>
+      <option value="1">Notebook</option>
+      <option value="2">Celular</option>
+      <option value="3">Relógio Inteligente</option>
+      <option value="4">Computador</option>
+      <option value="5">Tablet</option>
+    </select>
+
+    <label class="pagamento">Qual a forma de pagamento?</label>
+    <label><input type="radio" name="pagamento" id="avista">À Vista</label>
+    <label><input type="radio" name="pagamento" id="parcelado">Parcelado em 10x</label>
+
+    <input id="comprar" type="button" value="Comprar" onclick="calcular()">
+    <input id="cancelar" type="reset" value="Cancelar">
+  </form>
+</body>
+
+</html>

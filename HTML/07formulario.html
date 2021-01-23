@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+  <form action="http://google.com">
+
+    <input type="text" placeholder="Nome" pattern="[A-Za-z]{3,}" required>
+    <input type="email" placeholder="Email" required>
+    <input type="date">
+
+    <fieldset>
+      <legend>Escolha um turno</legend>
+      <input type="radio" name="turno">
+      <label>Matutino</label>
+      <input type="radio" name="turno">
+      <label>Vespertino</label>
+      <input type="radio" name="turno">
+      <label>Noturno</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Cursos</legend>
+
+      <input type="checkbox">
+      <label>Front End</label>
+
+      <input type="checkbox">
+      <label>Java</label>
+
+      <input type="checkbox">
+      <label>C#</label>
+
+    </fieldset>
+
+    <textarea placeholder="Mensagem"></textarea>
+
+
+    <input type="submit">
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09 extra</title>
+
+  <script> //  O usuário informa o valor que deseja aplicar em uma poupança, em seguida informa o tempo (em meses) e a taxa de juros que irá ganhar mensalmente sobre o valor aplicado. Exemplo: R$1.000,00 por três meses com juros a 2% ao mês.                         1º mês: R$1.020,00 / 2º mês: R$1.040,40 / 3º mês: R$1.061,20
+
+    // Valor a ser investido
+    var valor = parseInt(prompt("Informe o valor a ser investido"))
+
+    // Meses
+    var meses = parseInt(prompt("Informe quantos meses deseja aplicar"))
+
+    // Taxa de juros mensal
+    var taxa = parseFloat(prompt("Informe a taxa mensal"))
+
+    // Índice
+    var indice = 1
+
+    // Laço
+    while (indice <= meses) {
+
+      // Cálculo
+      valor += valor * 0.02
+
+      // Exibir rendimento a cada mês
+      document.write(indice + "º mês o valor será de R$" + valor.toFixed(2) + "<br>")
+
+      // Incremento
+      indice++
+    }
+
+    // Exibir pares e ímpares
+    document.write("<hr>")
+    document.write("Pares: " + par)
+    document.write("<br>")
+    document.write("Ímpares: " + impar)
+
+
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

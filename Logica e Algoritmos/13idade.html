@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Idades</title>
+
+  <script>
+    // vetor idades
+    var idades = []
+
+    //variavel de verificacao de loop
+    var valida = false
+
+    //indice
+    var indice = 0
+
+    //laco
+    do {
+      //obter idade
+      idades[indice] = prompt("Informe uma idade")
+
+      //incrementar
+      indice++
+
+      //validar se há mais um loop
+      var pergunta = parseInt(prompt("Deseja sair? \n1) Sim \n2)Não"))
+      if (pergunta == 1) {
+        valida = true
+      }
+    } while (valida == false)
+
+    //exibir maiores de idade
+    document.write("Maiores de idade:<br>")
+    for (var indice = 0; indice < idades.length; indice++) {
+      if (idades[indice] >= 18) {
+        document.write(idades[indice] + "<br>")
+      }
+    }
+
+    //exibir menores de idade
+    document.write("Menores de idade:<br>")
+    for (var indice = 0; indice < idades.length; indice++) {
+      if (idades[indice] <= 18) {
+        document.write(idades[indice] + "<br>")
+      }
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

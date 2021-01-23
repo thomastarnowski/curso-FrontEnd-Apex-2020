@@ -1,0 +1,19 @@
+{
+  "pedidos": [
+    {
+      "id": 1,
+      "produto": "notebook",
+      "valor": 2500
+    },
+    {
+      "produto": "secador",
+      "valor": 100,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "produto": "tv",
+      "valor": 1800
+    }
+  ]
+}

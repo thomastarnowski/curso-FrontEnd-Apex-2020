@@ -1,0 +1,19 @@
+{
+  "musicas": [
+    {
+      "banda": "a",
+      "musica": "1",
+      "letra": "teste",
+      "id": 1
+    }, 
+    
+    {
+      "banda": "cpm22",
+      "musica": "um minuto para o fim do mundo",
+      "letra": "Me sinto só Mas quem é que nunca se sentiu assimProcurando o caminho pra seguirUma direção, respostasUm minuto para o fim do mundoToda sua vida em 60 segundosUma volta no ponteiro do relógio pra viverO tempo corre contra mimSempre foi assim e sempre vai serVivendo apenas pra vencer a falta que me faz vocêDe olhos fechados eu tento esconder a dor agoraPor favor entenda eu preciso ir embora porqueQuando estou com vocêSinto meu mundo acabarPerco o chão sob os meus pésMe falta o ar pra respirar E só de pensar em te perder por um segundoEu sei que isso é o fim do mundo (go)O tempo corre contra mimSempre foi assim e sempre vai serVivendo apenas pra vencer a falta que me faz vocêDe olhos fechados eu tento esconder a dor agoraPor favor entenda eu preciso ir embora porqueQuando estou com vocêSinto meu mundo acabarPerco o chão sob os meus pésMe falta o ar pra respirarE só de pensar em te perder por um segundoEu sei que isso é o fim do mundoVolto o relógio para trás tentando adiar o fimTentando esconder o medo de te perder quando me sinto assimDe olhos fechados eu tento enganar meu coraçãoFugir pra outro lugar em uma outra direção porqueQuando estou com vocêSinto meu mundo acabarPerco o chão sob os meus pésMe falta o ar pra respirar E só de pensar em te perder por um segundoEu sei que isso é o fim do mundoQuando estou com vocêSinto meu mundo acabarPerco o chão sob os meus pésMe falta o arE só de pensar em te perder por um segundoEu sei que isso é o fim do mundoEu sei que isso é o fim do mundoEu sei que isso é o fimEu sei que isso é o fimEu sei que isso é o fim do mundo!",
+      "id": 2
+    }
+
+
+  ]
+}

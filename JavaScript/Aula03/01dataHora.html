@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data e Hora </title>
+
+  <script>
+
+    let data_hora = new Date();
+
+    // alert(data_hora);
+
+    let dia = data_hora.getDate()
+    let mes = data_hora.getMonth() + 1
+    let ano = data_hora.getFullYear()
+
+
+    let hora = data_hora.getHours()
+    let minuto = data_hora.getMinutes()
+    if (minuto < 10) {
+      minuto = "0" + minuto
+    }
+    let segundo = data_hora.getSeconds()
+
+    alert(dia + "/" + mes + "/" + ano)
+    alert(hora + ":" + minuto + ":" + segundo)
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

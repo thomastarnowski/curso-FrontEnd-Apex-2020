@@ -1,0 +1,22 @@
+1) O usuário informa uma palavra ou frase. Retorne a quantidade de vogais e consoantes.
+
+2) Será informado um verbo terminado em AR. Conjugue esse verbo, valide caso não seja terminado em AR.
+Exemplo: andar
+Eu ando
+Tu andas
+Ele anda
+Nós andamos
+Vós andais
+Ele andam
+
+3) Criar um formulário de contato com os campos: Nome, E-mail, Título e Mensagem.
+Nome: Precisa ter pelo menos três caracteres
+E-mail: Precisa ter apenas um @, ao menos um ponto e não pode ter caracteres especiais como: ç é ã....
+Título: Precisa ter pelo menos cinco caracteres
+Mensagem: Ter ao menos 10 caracteres
+
+4) Crie uma lista ou tabela com 10 nomes. Deverá ter um campo de texto, quando digitado, a tabela deverá ser filtrada automaticamente pelo termo digitado.
+
+5) Utilizando o conceito de JSON. Crie um sistema para cadastrar um nome de produto, marca e valor. Deverá ser listado em uma tabela, além de ter a opção de excluir o produto.
+
+6) Desenvolver um carrinho de compras. Liste alguns produtos, sempre que clicar deverá ser adicionado em um array e exibir para o cliente os produtos adicionados no carrinho.

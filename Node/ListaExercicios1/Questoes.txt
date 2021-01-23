@@ -1,0 +1,38 @@
+Atividades Node.js
+
+
+1) Desenvolver uma API para trabalhar com as seguintes características:
+>id
+>produto
+>marca
+>valor
+
+Realize testes de cadastro, seleção, alteração e exclusão através do POSTMAN.
+
+2) Criar um formulário com os campos: nome, nota1 e nota2. A ideia do formulário é cadastrar em um JSON esses dados, além da média das duas notas e a situação. A situação basicamente consiste em aprovado caso o aluno tenha média 7 ou superior e caso contrário reprovado.
+
+Deverão ser listados todos os dados do JSON em uma tabela (nome, nota1, nota2, média e situação), além de ter um botão para excluir os dados.
+
+3) Criar um sistema para cadastrar despesas. Informe o nome da conta, valor e data de pagamento. Os dados deverão ser exibidos em uma tabela. Crie uma rota, onde o usuário poderá filtrar as contas da seguinte maneira:
+>Do maior para o menor valor
+>Do menor para o maior valor
+a questão 03 vocês podem realizar a filtragem apenas pelos valores das contas ok? Não precisam filtrar por ordem alfabética (o nome é meio complicado de filtrar, mas o valor acho que vcs conseguem).
+
+4) Criar um sistema para cadastrar: nome, idade, peso e altura. Cadastre em um JSON esses dados além do valor do cálculo de IMC e a situação do IMC. Deverá ter uma tabela para listar todos os dados do JSON (nome, idade, peso, altura, calculo imc e situação imc).
+
+O cálculo de IMC é feito da seguinte maneira: peso / (altura * altura)
+A situação do IMC é baseada pelo valor do IMC:
+> Até 18.5 abaixo do peso
+> Até 25 peso normal
+> Até 30 acima do peso
+> Acima de 30 obesidade
+___________________________________________________________________________________________________________________
+
+Comandos para a primeira atividade:
+json-server seu_arquivo.json
+(Se der erro esse comando favor reinstalar o módulo de api fake: npm install -g json-server)
+
+Comandos para a segunda atividade em diante:
+npm i express
+npm i express-handlebars
+npm i body-parser

@@ -1,0 +1,25 @@
+<form action="/cadastrar" method="post">
+  <input type="text" name="nome" placeholder="Nome" class="form-control">
+  <input type="text" name="idade" placeholder="Idade" class="form-control">
+  <input type="submit" value="Cadastrar" class="btn btn-success">
+</form>
+
+<style>
+  input[type="submit"] {
+    margin: 10px;
+  }
+</style>
+
+<table class="table table-striped">
+
+
+  {{#each vetor}}
+
+  <tr>
+    <td>{{id}}</td>
+    <td>{{nome}}</td>
+    <td>{{idade}}</td>
+    <td><a href="/remover/{{id}}" class="btn btn-danger">Remover</a></td>
+  </tr>
+  {{/each}}
+</table>

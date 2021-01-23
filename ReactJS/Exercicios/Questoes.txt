@@ -1,0 +1,22 @@
+a) Criar um sistema de incremento e decremento. Deverá ter dois botões, um que incrementa mais um e outro que decrementa menos um. Exiba o valor e atualize sempre que clicado em um dos botões.
+
+b) Criar um sistema para converter moedas. O usuário informa um valor e o tipo de conversão:
+> Real para Dólar
+> Dólar para Real
+> Real para Euro
+> Euro para Real
+
+c) Utilizando rotas, crie um site contendo ao menos três páginas.
+
+d) Desenvolver um sistema CRUD com os dados: Nome do produto e valor, implemente as seguintes funcionalidades:
+> Cadastro
+> Seleção
+> Alteração
+> Exclusão
+
+Não poderão ser cadastrados produtos com campos vazios e não poderá haver produtos de mesmo nome.
+Valide se o valor do produto informado contêm apenas números.
+
+e) Utilizando a API de Pokémon (https://pokeapi.co/), crie um sistema que seja possível listar todos os Pokémons. Crie um campo de pesquisa, onde o usuário consiga digitar o nome do Pokémon e retorne os dados referentes a pesquisa realizada.
+
+A questão E é muito utilizada em testes para ingressar nas vagas de front. Pra ter uma ideia, o Mercado Livre pede pra fazer algo parecido, então quem quiser se focar em um desafio, favor fazer em especial a última.

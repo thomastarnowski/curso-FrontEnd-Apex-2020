@@ -1,0 +1,29 @@
+1) Desenvolver uma classe contendo os atributos:
+  > nome
+  > nota1
+  > nota2
+
+  Criar os métodos
+  calculo():number -> Retorna a média
+  situacao(media):string -> Retorna se está aprovado(a) ou reprovado(a)
+  mensagem():void -> Exibe a média e a situação
+
+2) Criar um sistema, onde seja informado o nome de um produto e o valor, implemente os seguintes atributos:
+  > nome
+  > valor
+
+  Criar os métodos
+  calculo():number -> Retorna o valor do produto com 10% de desconto, se o valor for maior ou igual R$100,00.
+  mensagem():void -> Retorna o nome do produto e o total a ser pago.
+
+3) Desenvolver um sistema para realizar um cálculo, para isso teremos os seguintes atributos:
+   > valor1
+   > valor2
+   > operacao
+   
+   Criar os métodos
+   calculo():void -> Verifica qual cálculo deve ser executado e retorna o valor
+   soma():number -> Retorna a soma
+   subtracao():number -> Retorna a subtração
+   multiplicacao():number -> Retorna a multiplicação
+   divisao():number -> Retorna a divisão

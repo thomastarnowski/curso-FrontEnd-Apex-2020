@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 06</title>
+
+  <script> // 6) O usuário informa um valor, exiba a tabuada daquele número.
+
+    function tabuada() {
+
+      var valor = parseInt(document.getElementById("valor").value)
+      var indice = 0
+
+
+      while (indice < 11) {
+        document.getElementById("mensagem").innerHTML += (valor + " X " + indice + " = " + valor * indice + "<br>")
+        indice++
+      }
+
+      indice = 0
+
+      listar()
+
+
+    }
+
+    function listar() {
+
+      // obter o elemento listar
+      var elemento_listar = document.getElementById("listar")
+
+      //limpar elemento listar
+      elemento_listar.innerHTML = ""
+
+
+    }
+
+
+
+
+  </script>
+</head>
+
+<body>
+
+  <input type="text" placeholder="Digite um número" id="valor">
+
+  <button onclick="tabuada()">Confirmar</button>
+
+  <p id="mensagem"></p>
+
+</body>
+
+</html>

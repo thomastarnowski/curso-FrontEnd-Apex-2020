@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 01</title>
+
+  <!-- O usuário informa uma palavra ou frase. Retorne a quantidade de vogais e consoantes. -->
+
+  <script>
+
+    function verificar() {
+
+      let palavra = document.getElementById("palavra").value.toLowerCase()
+
+      var vog = 0
+      var cons = 0
+
+      for (var i = 0; i <= palavra.length - 1; i++) {
+        if (palavra.charAt(i) == "a" || palavra.charAt(i) == "e" || palavra.charAt(i) == "i" || palavra.charAt(i) == "o" || palavra.charAt(i) == "u") {
+          vog += 1
+        } else {
+          cons += 1
+        }
+      }
+
+      document.getElementById("resultadoVog").innerHTML = ("Total de vogais: " + vog)
+      document.getElementById("resultadoCons").innerHTML = ("Total de consoantes: " + cons)
+    }
+
+  </script>
+</head>
+
+<body>
+
+
+  <input type="text" placeholder="Informe uma palavra" id="palavra">
+  <button onclick="verificar()">Verificar</button>
+
+  <p id="resultadoVog"></p>
+  <p id="resultadoCons"></p>
+</body>
+
+</html>

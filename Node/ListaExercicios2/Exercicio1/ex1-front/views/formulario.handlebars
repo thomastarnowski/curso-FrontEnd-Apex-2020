@@ -1,0 +1,26 @@
+<div class="container">
+
+  <form action="/cadastrar" method="POST" class="formulario">
+    <img src="img/iconfinder_laptop_1287522.png" class="item">
+    <input type="text" name="nome" placeholder="Nome do Produto" class="item">
+    <input type="text" name="marca" placeholder="Marca" class="item">
+    <input type="number" name="valor" placeholder="Valor" class="item">
+    <input type="submit" value="Cadastrar" class="item btn btn-success">
+  </form>
+
+</div>
+
+<table class="table table-striped">
+
+
+  {{#each vetor}}
+
+  <tr>
+    <td>{{id}}</td>
+    <td>{{nome}}</td>
+    <td>{{marca}}</td>
+    <td>{{valor}}</td>
+    <td><a href="/remover/{{id}}" class="btn btn-danger">Remover</a></td>
+  </tr>
+  {{/each}}
+</table>

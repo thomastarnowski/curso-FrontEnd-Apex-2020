@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <style>
+    form {
+      width: 50%;
+      margin: 50px auto;
+    }
+
+    input,
+    select {
+      margin-bottom: 10px;
+    }
+  </style>
+
+
+  <script>
+    function valida() {
+      // varivavel retorno
+      var retorno = true
+
+      // obter dados
+      let nome = document.getElementById("nome")
+      let email = document.getElementById("email")
+      let turno = document.getElementById("turno")
+
+      // validar campo nome e email
+      if (nome.value == "") {
+        alert("O campo nome precisa ser preenchido")
+        retorno = false
+      } else if (nome.value.length < 3) {
+        alert("O nome precisa ter mais de três caracteres")
+        retorno = false
+      } else if (email.value == "") {
+        alert("O campo email precisa ser preenchido")
+        retorno = false
+      } else if (email.value.length < 5) {
+        alert("O email precisa ter ao menos cinco caracteres")
+        retorno = false
+      } else if (email.value.indexOf("@") == -1) {
+        alert("Favor informar um email válido")
+        retorno = false
+      } else if (turno.value == 0) {
+        alert("Favor informar o turno")
+        retorno = false
+      }
+      // retorno
+      return retorno
+    }
+
+
+
+
+  </script>
+
+</head>
+
+<body>
+
+  <form action="https://www.google.com" onsubmit="return valida()">
+    <input type="text" placeholder="Nome" id="nome" class="form-control">
+    <input type="text" placeholder="E-mail" id="email" class="form-control">
+    <select id="turno" class="form-control">
+      <option value="0">Escolha o turno</option>
+      <option value="1">Matutino</option>
+      <option value="2">Vespertino</option>
+      <option value="3">Noturno</option>
+    </select>
+    <input type="submit" class="btn btn-primary">
+  </form>
+
+</body>
+
+</html>

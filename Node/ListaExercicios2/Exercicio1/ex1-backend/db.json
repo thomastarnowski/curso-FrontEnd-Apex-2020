@@ -1,0 +1,10 @@
+{
+  "produtos": [
+    {
+      "nome": "abc",
+      "marca": "huahuaahu",
+      "valor": "323232",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 01</title>
+</head>
+
+<script> // 1) Desenvolver um sistema, onde o usuário irá pedir duas notas, em seguida exiba a média e a situação. A situação será aprovada se a média for 7 ou mais, caso contrário será reprovada.
+
+
+  //function cadastrar
+  function cadastrar() {
+
+    //obter as notas
+    var nota1 = parseFloat(document.getElementById("nota1").value)
+    var nota2 = parseFloat(document.getElementById("nota2").value)
+
+    //realizar media
+
+
+    var media = (nota1 + nota2) / 2
+
+
+    // exibir mensagem com media e situacao
+    if (media >= 7) {
+      document.getElementById("mensagem").innerHTML = "Aprovado com media " + media
+    } else {
+      document.getElementById("mensagem").innerHTML = "Reprovado com media " + media
+    }
+  }
+
+
+
+</script>
+
+<body>
+
+  <input type="text" placeholder="Informe a nota" id="nota1">
+  <input type="text" placeholder="Informe a nota" id="nota2">
+
+  <button onclick="cadastrar()">Cadastrar</button>
+
+  <p id="mensagem"></p>
+
+</body>
+
+</html>

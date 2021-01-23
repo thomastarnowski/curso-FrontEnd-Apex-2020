@@ -1,0 +1,89 @@
+<form action="/cadastrar" method="post">
+  <input type="text" name="nome" placeholder="Nome">
+  <input type="text" name="peso" placeholder="Peso">
+  <input type="text" name="altura" placeholder="Altura">
+  <input type="submit" value="Cadastrar">
+</form>
+
+
+{{#if cadastro}}
+{{/if}}
+
+{{#if removido}}
+{{/if}}
+
+<hr>
+
+<style>
+  table th {
+    background-color: #c7c7c7;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #000;
+    margin-right: 10px;
+  }
+
+  table td {
+    background-color: #b3e7b3;
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  table td a {
+    text-decoration: none;
+    color: #ff0000c9;
+  }
+
+  input[type="number"],
+  input[type="text"] {
+    border-radius: 5px;
+    padding: 5px 5px;
+    border: 1px solid #000;
+    padding-left: 10px;
+    margin-right: 10px;
+  }
+
+  input[type="submit"] {
+    border: 2px solid #ff1900;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 55px;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    font-weight: bold;
+  }
+
+  input[type="submit"]:hover {
+    box-shadow: 0 0 40px 40px #ff1900 inset;
+    color: white;
+  }
+</style>
+
+<table>
+
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Peso(kg)</th>
+      <th>Altura(m)</th>
+      <th>Calculo</th>
+      <th>Situação do IMC</th>
+      <th>Remover</th>
+    </tr>
+  </thead>
+
+  {{#each pessoas}}
+  <tr>
+    <td>{{nome}}</td>
+    <td>{{peso}}</td>
+    <td>{{altura}}</td>
+    <td>{{calculo}}</td>
+    <td>{{situacao}}</td>
+    <td><a href="/remover/{{@index}}">Excluir</a></td </tr>
+    {{/each}}
+
+</table>

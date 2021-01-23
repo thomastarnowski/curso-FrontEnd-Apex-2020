@@ -1,0 +1,35 @@
+.bg-novo {
+  background-color: rgb(24, 75, 0);
+}
+
+.imgBanner {
+  height: 800px;
+}
+
+@media screen and (max-width: 576px) {
+  .imgBanner {
+    height: 300px;
+  }
+}
+
+.container h1 {
+  margin: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card h2 {
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.card p {
+  padding: 10px;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 1px 1px 5px #000;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,227 @@
+/*fontes*/
+@font-face {
+  font-family: roboto;
+  src: url(fontes/Roboto-Regular.ttf);
+}
+
+/* padronizar as tags */
+* {
+  margin: 0px;
+  padding: 0px;
+  font: 14px arial;
+}
+
+header {
+  background-color: #f1bbbb;
+  overflow: auto;
+}
+
+header img {
+  float: left;
+  margin: 15px;
+}
+
+header nav {
+  float: right;
+}
+
+header a {
+  display: inline-block;
+  padding-right: 15px;
+  padding-top: 25px;
+  text-decoration: none;
+  color: #000000;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* conteudo principal */
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* pagina inicio */
+.inicio ul {
+  list-style: none;
+}
+
+.inicio li {
+  display: inline-block;
+  margin: 17px;
+}
+
+.inicio h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Hind Siliguri", sans-serif;
+  letter-spacing: 0.8px;
+}
+
+.inicio li:hover {
+  box-shadow: 0px 0px 20px #000;
+  border-radius: 10px;
+}
+
+.inicio h1:hover {
+  font-style: italic;
+}
+
+/* 
+box shadow parametros
+1 - borda horinzontal (esquerda direita)
+2 - borda vertical (cima, baixo)
+3 - esfumaçar
+4 - cor
+*/
+
+/* rodape */
+footer {
+  text-align: center;
+  background-color: #f1bbbb;
+  color: rgb(226, 94, 94);
+  margin-top: 50px;
+  padding: 10px;
+}
+
+/* SOBRE */
+.sobre h1 {
+  text-align: center;
+  font-size: 26px;
+  margin: 50px;
+  font-family: "Hind Siliguri", sans-serif;
+  text-transform: uppercase;
+}
+
+.sobre p {
+  font-size: 16px;
+  font-family: "Hind Siliguri", sans-serif;
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 25px;
+}
+
+.sobre img {
+  margin: 0 auto;
+  margin-left: 320px;
+  margin-bottom: 50px;
+}
+
+.sobre .img2 {
+  margin: 0 auto;
+  margin-left: 400px;
+  margin-bottom: 50px;
+}
+
+/*  BLOG */
+.blog h1 {
+  text-align: center;
+  font-size: 26px;
+  margin: 50px;
+  font-family: "Hind Siliguri", sans-serif;
+  text-transform: uppercase;
+}
+
+.blog .introducao-blog {
+  text-align: left;
+  font-size: 16px;
+  font-family: "Hind Siliguri", sans-serif;
+  text-indent: 30px;
+  line-height: 25px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+
+.blog .imagem-titulo {
+  margin: 0 auto;
+  margin-left: 280px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.blog h2 {
+  font-size: 24px;
+  text-align: left;
+  font-family: "Hind Siliguri", sans-serif;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-left: 280px;
+  font-weight: bold;
+}
+
+.blog .data-autor {
+  color: #797979;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 282px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.blog h3 {
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 210px;
+  color: #d65252;
+  font-size: 18px;
+  margin-top: 50px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.blog .introducao-texto p {
+  width: 800px;
+  font-size: 16px;
+  font-family: "Hind Siliguri", sans-serif;
+  text-align: left;
+  text-indent: 30px;
+  line-height: 25px;
+  margin-left: 200px;
+}
+
+.blog .texto p {
+  margin-top: 20px;
+  width: 800px;
+  font-size: 16px;
+  font-family: "Hind Siliguri", sans-serif;
+  text-align: left;
+  text-indent: 30px;
+  line-height: 25px;
+  margin-left: 200px;
+  margin-bottom: 30px;
+}
+
+.blog .imagem1,
+.imagem2 {
+  text-align: left;
+  margin-left: 250px;
+  margin-bottom: 10px;
+}
+
+.blog .comentario {
+  width: 750px;
+  height: 130px;
+  background-color: #e4828211;
+  text-align: left;
+  margin: 30px;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.blog .imagem-autor {
+  margin: 20px;
+  float: left;
+}
+
+.blog .comentario p {
+  font-size: 14px;
+  font-family: "Hind Siliguri", sans-serif;
+  padding: 30px;
+  font-style: italic;
+  opacity: 0.7+ 33;
+}

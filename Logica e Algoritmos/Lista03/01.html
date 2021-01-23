@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercicio 01</title>
+
+  <script>
+
+    // 1) Pedir 5 números, em seguida exiba em ordem inversa.
+
+    //vetor 
+    var numeros = []
+
+
+    //obter numeros
+    for (var indice = 0; indice < 5; indice++)
+      numeros[indice] = (parseInt(prompt("Informe o " + (indice + 1) + " º número")))
+
+    //exibir numeros de tras pra frente
+    for (indice = 4; indice >= 0; indice--)
+      document.write(numeros[indice])
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

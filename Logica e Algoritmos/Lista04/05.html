@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 05</title>
+
+  <script> /* 5) Implemente um sistema para converter valores monetários. O usuário poderá converter os seguintes tipos de moedas:
+Real para Dólar
+Dólar para Real
+Real para Euro
+Euro para Real
+*/
+
+    function calcular() {
+
+      var valor = parseFloat(document.getElementById("valor").value)
+      var conversao = parseFloat(document.getElementById("conversao").value)
+
+      switch (conversao) {
+        case 1:
+          document.getElementById("mensagem").innerHTML = (valor / 5.30)
+          break;
+
+        case 2:
+          document.getElementById("mensagem").innerHTML = (valor * 5.30)
+          break;
+
+        case 3:
+          document.getElementById("mensagem").innerHTML = (valor / 6.25)
+          break;
+
+        case 4:
+          document.getElementById("mensagem").innerHTML = (valor * 6.25)
+          break;
+        default:
+          alert("Operação Inválida")
+
+      }
+
+
+
+    }
+
+
+
+  </script>
+</head>
+
+<body>
+
+  <h1>Conversor de moedas</h1>
+  <h2>Cotação (04/08/20)<br>
+    Dolar: R$5,30 <br>
+    Euro: R$6,25
+    <hr>
+  </h2>
+  <input type="text" placeholder="Informe um valor" id="valor">
+
+  <select id="conversao">
+    <option>Escolha uma opção</option>
+    <option value="1">Real para Dólar</option>
+    <option value="2">Dólar para Real</option>
+    <option value="3">Real para Euro</option>
+    <option value="4">Euro para Real</option>
+  </select>
+
+  <button onclick="calcular()">Converter</button>
+
+  <p id="mensagem"></p>
+
+</body>
+
+</html>

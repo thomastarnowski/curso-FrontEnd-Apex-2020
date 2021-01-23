@@ -1,0 +1,47 @@
+a {
+  border-right: 1px solid #000;
+  padding: 10px 20px;
+  margin: 5px 10px;
+  border-color: white;
+  letter-spacing: 0.1em;
+}
+.navbar-brand {
+  color: white;
+}
+
+#ex01 {
+  color: blue;
+}
+
+#ex01:hover {
+  color: white;
+}
+
+#ex02 {
+  color: orange;
+}
+
+#ex02:hover {
+  color: white;
+}
+
+#ex03 {
+  color: red;
+}
+
+#ex03:hover {
+  color: white;
+}
+
+#ex04 {
+  color: green;
+}
+
+#ex04:hover {
+  color: white;
+}
+
+.navbar {
+  box-shadow: 0px 0px 10px #000;
+  margin-bottom: 50px;
+}

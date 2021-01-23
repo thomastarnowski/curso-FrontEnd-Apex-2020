@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 03</title>
+
+  <!-- 3) Criar um formulário de contato com os campos: Nome, E-mail, Título e Mensagem.
+Nome: Precisa ter pelo menos três caracteres
+E-mail: Precisa ter apenas um @, ao menos um ponto e não pode ter caracteres especiais como: ç é ã....
+Título: Precisa ter pelo menos cinco caracteres
+Mensagem: Ter ao menos 10 caracteres -->
+
+</head>
+
+<style>
+  body {
+    background-color: darkgray;
+  }
+
+  #formulario {
+    margin: 0 auto;
+    width: 700px;
+    height: 500px;
+    background-color: #7c7c7c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #000;
+  }
+
+  #nome,
+  #email,
+  #titulo,
+  #mensagem {
+    width: 300px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px #000;
+  }
+
+  #enviar {
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #000;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+
+  #enviar:hover {
+    background-color: blanchedalmond;
+  }
+</style>
+
+<script>
+
+  function verifica() {
+
+    let retorno = true
+
+    //obter dados
+    let nome = document.getElementById("nome")
+    let email = document.getElementById("email")
+    let titulo = document.getElementById("titulo")
+    let mensagem = document.getElementById("mensagem")
+
+    // validar campo nome com pelo menos 3 caracteres
+    if (nome.value.length < 3) {
+      alert("O nome precisa ter 3 caracteres")
+      retorno = false
+      // validar campo email com @ e . 
+    } else if (email.value.indexOf("@") == -1) {
+      alert("Favor informar um e-mail válido.")
+      retorno = false
+    } else if (email.value.indexOf(".") == -1) {
+      alert("Favor informar um e-mail válido")
+      retorno = false
+      // verificar campo titulo tem 5 caracteres
+    } else if (titulo.value.length < 5) {
+      alert("O titulo precisa ter 5 caracteres")
+      retorno = false
+      // verificar mensagem tem 10 caracteres
+    } else if (mensagem.value.length < 10) {
+      alert("A mensagem precisa ter 10 caracteres")
+      retorno = false
+    }
+
+    return retorno
+  }
+
+</script>
+
+<body>
+
+  <div id="container"></div>
+  <form id="formulario" action="http://www.google.com" onsubmit="return verifica()">
+    <input type="text" id="nome" placeholder="Informe seu nome">
+    <input type="email" id="email" placeholder="Informe seu e-mail">
+    <input type="text" id="titulo" placeholder="Sobre o que quer saber?">
+    <textarea id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+    <input type="submit" value="Enviar" id="enviar">
+  </form>
+
+</body>
+
+</html>

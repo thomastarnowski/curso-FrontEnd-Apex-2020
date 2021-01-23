@@ -1,0 +1,95 @@
+/* PADRONIZAR AS TAGS */
+* {
+  font: 14px sans-serif;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+/* CUSTOMIZAR O BODY */
+body {
+  background-image: url(stripes-light.png);
+}
+
+form {
+  background-color: rgba(49, 49, 49, 0.164);
+  width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  box-shadow: 0px 0px 5px #000;
+}
+
+img {
+  width: 150px;
+  margin-bottom: 40px;
+  margin-left: 335px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 550px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+
+fieldset {
+  width: 550px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid #000
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 572px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 550px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin-left: 100px;
+  resize: none;
+}
+
+input[type="button"] {
+  margin-left: 240px;
+}
+
+input[type="button"],
+input[type="reset"] {
+  background: linear-gradient(
+    to bottom,
+    #9dd53a 0%,
+    #a1d54f 50%,
+    #80c217 51%,
+    #7cbc0a 100%
+  );
+  border: 1px solid #67aa0a;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  width: 130px;
+  margin-top: 20px;
+  transition: box-shadow 1s;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px #777;
+  color: #000;
+}

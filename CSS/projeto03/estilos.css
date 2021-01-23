@@ -1,0 +1,252 @@
+/* Padrão */
+* {
+  margin: 0px;
+  padding: 0px;
+  font: 14px sans-serif;
+  outline: none;
+  list-style: none;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.301);
+}
+
+/* COMBINACAO CORES EM https://www.color-hex.com/color-palette/8958 */
+
+/* Topo */
+header {
+  overflow: hidden;
+  box-shadow: 0px 3px 5px #4b0b0b;
+  background-color: #9c5757;
+}
+
+#logo {
+  float: left;
+  width: 15%;
+  padding-top: 20px;
+}
+
+#logo img {
+  margin: 10px 20px 20px 30px;
+}
+
+#pesquisa {
+  float: left;
+  width: 75%;
+  padding-top: 25px;
+  text-align: center;
+}
+
+#pesquisa input[type="search"] {
+  border: 1px solid #000;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 15px;
+  border-right-width: 0px;
+  width: 700px;
+  margin-bottom: 20px;
+  background-color: #d49090;
+  margin-top: 1px;
+}
+
+#pesquisa input[type="button"] {
+  border: 1px solid #000;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 15px;
+  background-color: #d49090;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+#pesquisa input[type="button"]:hover {
+  color: rgba(255, 255, 255, 0.63);
+  box-shadow: 0px 0px 5px #4b0b0b;
+}
+
+#cesta {
+  float: left;
+  width: 10%;
+  padding-top: 15px;
+  text-align: right;
+}
+
+#cesta img {
+  width: 40px;
+  height: 40px;
+  margin-right: 50px;
+  margin-top: 12px;
+}
+
+/* Conteúdos */
+main {
+  width: 1200px;
+  margin: 20px auto;
+}
+
+/* Categorias */
+#categorias {
+  overflow: hidden;
+}
+
+#categoriaPrincipal {
+  background-image: url(imagens/categorias/1.jpg);
+  background-size: cover;
+  width: 580px;
+  height: 390px;
+  float: left;
+  margin: 10px;
+  margin-top: 5px;
+  box-shadow: 2px 2px 2px #d49090;
+  border-radius: 5px;
+}
+
+#categoriaPrincipal:hover {
+  box-shadow: 2px 2px 5px #000;
+  transition: 0.4s;
+  transform: scale(1.02, 1.02);
+}
+
+#categoriaPrincipal h1 {
+  font-size: 36px;
+  margin-top: 130px;
+  margin-left: 70px;
+  font-family: "ABeeZee", sans-serif;
+  border-bottom: 2px solid #4b0b0b;
+  padding-bottom: 5px;
+  width: 50px;
+}
+
+#categoriaSecundaria {
+  float: left;
+  width: 600px;
+}
+
+#categoriaSecundaria h1 {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  font-family: "ABeeZee", sans-serif;
+  border-bottom: 2px solid #4b0b0b;
+  padding-bottom: 5px;
+  width: 50px;
+}
+
+#categoria_masculino {
+  background-image: url(imagens/categorias/2.jpg);
+  background-size: cover;
+  width: 290px;
+  height: 190px;
+  float: left;
+  box-shadow: 2px 2px 2px #d49090;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#categoria_masculino:hover {
+  box-shadow: 2px 2px 5px #000;
+  transition: 0.4s;
+  transform: scale(1.02, 1.02);
+}
+
+#categoria_infantil {
+  background-image: url(imagens/categorias/3.jpg);
+  background-size: cover;
+  width: 290px;
+  height: 190px;
+  float: left;
+  box-shadow: 2px 2px 2px #d49090;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#categoria_infantil:hover {
+  box-shadow: 2px 2px 5px #000;
+  transition: 0.4s;
+  transform: scale(1.02, 1.02);
+}
+
+#categoria_cosmeticos {
+  background-image: url(imagens/categorias/4.jpg);
+  background-size: cover;
+  width: 290px;
+  height: 190px;
+  float: left;
+  box-shadow: 2px 2px 2px #d49090;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#categoria_cosmeticos:hover {
+  box-shadow: 2px 2px 5px #000;
+  transition: 0.4s;
+  transform: scale(1.02, 1.02);
+}
+
+#categoria_acessorios {
+  background-image: url(imagens/categorias/5.jpg);
+  background-size: cover;
+  width: 290px;
+  height: 190px;
+  float: left;
+  box-shadow: 2px 2px 2px #d49090;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#categoria_acessorios:hover {
+  box-shadow: 2px 2px 5px #000;
+  transition: 0.4s;
+  transform: scale(1.02, 1.02);
+}
+
+/* PRODUTOS */
+#produtos h1 {
+  text-align: center;
+  margin: 40px 0px;
+  margin-left: 440px;
+  font-family: "ABeeZee", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid #4b0b0b;
+  padding-bottom: 10px;
+  letter-spacing: 0.8px;
+  margin-top: 80px;
+  width: 310px;
+}
+
+#produtos ul li {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #000;
+  border-top: 3px solid #d49090;
+  border-bottom: 1px solid #4b0b0b;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.479);
+}
+
+#produtos ul li:hover {
+  box-shadow: 0px 0px 10px #9c5757;
+  transition: 0.4s;
+  transform: scale(1.02, 1.02);
+}
+
+#produtos p {
+  text-align: center;
+  margin: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.4px;
+  margin-bottom: 10px;
+}
+
+#preco {
+  text-align: center;
+  font-style: italic;
+}
+
+#produtos img {
+  border-bottom: 3px solid #d49090;
+}

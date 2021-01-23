@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 7 Extra</title>
+
+  <script>
+
+    var cargo1 = 0
+    var cargo2 = 0
+    var cargo3 = 0
+    var cargo4 = 0
+    var cargo5 = 0
+
+    var menu = "Por favor, informe seu cargo.\n"
+    menu += "1) Atendente\n"
+    menu += "2) Gerente\n"
+    menu += "3) Desenvolvedor\n"
+    menu += "4) Analista\n"
+    menu += "5) Designer\n"
+    menu += "6) Nenhum acima"
+
+    var voto
+
+    do {
+      voto = parseInt(prompt(menu))
+
+      switch (voto) {
+
+        case 1:
+          cargo1++
+          break
+
+        case 2:
+          cargo2++
+          break
+
+        case 3:
+          cargo3++
+          break
+
+        case 4:
+          cargo4++
+          break
+
+        case 5:
+          cargo5++
+          break
+
+      }
+
+    } while (voto != 6)
+
+
+    document.write("Atendente: " + cargo1)
+    document.write("<br>")
+    document.write("Gerente: " + cargo2)
+    document.write("<br>")
+    document.write("Desenvolvedor: " + cargo3)
+    document.write("<br>")
+    document.write("Analista: " + cargo4)
+    document.write("<br>")
+    document.write("Designer: " + cargo5)
+
+
+
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

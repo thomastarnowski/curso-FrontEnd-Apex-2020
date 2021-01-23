@@ -1,0 +1,19 @@
+Exercícios de CSS
+
+1. Desenvolver um sistema que peça três notas. Retorne a média do aluno e a sua devida situação (aprovado ou reprovado).
+
+2. Listar cinco produtos, também haverá uma opção para informar o tipo de pagamento (a vista ou a prazo). Se for pago de maneira a vista terá 10% de desconto, caso contrário pagamento integral.
+
+3. Criar um sistema de votação para quatro candidatos. Deverá exibir a contagem de votos em alguma parte do sistema e atualizar sempre que computado o voto.
+
+4. Pedir quatro notas e as faltas. Se o aluno tiver mais que 15 faltas estará reprovado independente a média, caso faltas 15 ou inferior, exiba a média e a sua situação, sendo ela: 7 ou mais aprovado, entre 5 e 6,9 em exame e abaixo de 5 reprovado.
+
+5. Pedir três números e retornar o menor de todos.
+
+6. Peça os quatro lados de um quadrado. Se forem iguais retorne que é um quadrado, caso contrário, não é um quadrado.
+
+7. Criar um formulário contendo os campos: nome de produto, marca e valor. Abaixo uma tabela para listar os produtos cadastrados.
+
+8. Criar um layout para jogo da velha.
+
+9. Criar um sistema com um formulário para cadastrar: nome, peso e altura. Abaixo terá uma tabela para listar os dados: nome, peso, altura, imc e situação.

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thomas03</title>
+
+  <script> // 3) Peça vários números, até que o usuário informe o número zero. Informe a quantidade de pares, ímpares, positivos e negativos. Exiba todos os valores informados.
+
+    // array
+    var numeros = []
+
+    var numero
+
+    //obter dados
+    do {
+      numero = prompt("Informe um número, ou digite 0 para sair")
+
+      if (numero != 0) {
+        numeros.push(numero)
+      }
+    } while (numero != 0)
+
+    // contadores
+    var positivo = 0
+    var negativo = 0
+    var par = 0
+    var impar = 0
+
+    //obter pares e impares, negativos e positivos
+    for (indice = 0; indice < numeros.length; indice++) {
+      //positivos e negativos
+      if (numeros[indice] > 0) {
+        positivo++
+      } else {
+        negativo++
+      }
+
+      //pares e impares
+      if (numeros[indice] % 2 == 0) {
+        par++
+      } else {
+        impar++
+      }
+    }
+
+    //Exibir dados 
+    document.write("Números pares: " + par + "<hr>")
+    document.write("Números impares: " + impar + "<hr>")
+    document.write("Números positivos: " + positivo + "<hr>")
+    document.write("Números negativos: " + negativo + "<hr>")
+
+    //exibir todos numeros informados
+    for (var indice = 0; indice < numeros.length; indice++) {
+      document.write(numeros[indice] + " <br>")
+    }
+  </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

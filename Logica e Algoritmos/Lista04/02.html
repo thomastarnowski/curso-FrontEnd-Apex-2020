@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 2</title>
+
+  <script> // 2) Informe três valores, exiba qual deles é o menor.
+
+    function menor() {
+
+      var n1 = parseInt(document.getElementById("n1").value)
+      var n2 = parseInt(document.getElementById("n2").value)
+      var n3 = parseInt(document.getElementById("n3").value)
+
+
+      if (n1 < n2 && n1 < n3) {
+        document.getElementById("mensagem").innerHTML = "O menor número é " + n1
+      } else if (n2 < n1 && n2 < n3) {
+        document.getElementById("mensagem").innerHTML = "O menor número é " + n2
+      } else {
+        document.getElementById("mensagem").innerHTML = "O menor número é " + n3
+      }
+
+    }
+
+
+  </script>
+
+</head>
+
+<body>
+
+  <input type="text" placeholder="Digite o primeiro número" id="n1">
+  <input type="text" placeholder="Digite o segundo número" id="n2">
+  <input type="text" placeholder="Digite o terceiro número" id="n3">
+
+  <button onclick="menor()">Clique aqui</button>
+
+  <p id="mensagem"></p>
+
+</body>
+
+</html>

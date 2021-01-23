@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 02</title>
+  <!-- Será informado um verbo terminado em AR. Conjugue esse verbo, valide caso não seja terminado em AR.
+Exemplo: andar
+    Eu ando
+    Tu andas
+    Ele anda
+    Nós andamos
+    Vós andais
+    Ele andam -->
+
+  <script>
+
+    function conjulgar() {
+
+      let verbo = document.getElementById("verbo").value.toLowerCase()
+
+      let procurar = verbo.indexOf("ar")
+
+      if (procurar !== -1) {
+        document.getElementById("eu").innerHTML = "Eu " + verbo.substring(0, verbo.length - 2) + "o"
+        document.getElementById("tu").innerHTML = "Tu " + verbo.substring(0, verbo.length - 2) + "as"
+        document.getElementById("ele").innerHTML = "Ele " + verbo.substring(0, verbo.length - 2) + "a"
+        document.getElementById("nos").innerHTML = "Nos " + verbo.substring(0, verbo.length - 2) + "amos"
+        document.getElementById("vos").innerHTML = "Vos " + verbo.substring(0, verbo.length - 2) + "ais"
+        document.getElementById("eles").innerHTML = "Eles " + verbo.substring(0, verbo.length - 2) + "am"
+
+      } else {
+        document.write("nao tem ar")
+      }
+
+    }
+
+  </script>
+</head>
+
+<body>
+
+  <input type="text" placeholder="Informe um verbo" id="verbo">
+  <button onclick="conjulgar()">Conjulgar</button>
+
+  <p id="eu"></p>
+  <p id="tu"></p>
+  <p id="ele"></p>
+  <p id="nos"></p>
+  <p id="vos"></p>
+  <p id="eles"></p>
+
+</body>
+
+</html>
