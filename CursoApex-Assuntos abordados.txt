@@ -1,0 +1,96 @@
+Curso realizado no ano de 2020 pela instituição APEX Ensino. Foram 5 meses de curso, altamente focado na área de Front-End. 
+Aprendemos a usar as mais atualizadas ferramentas no mercado, tais como: 
+
+LÓGICA DE ALGORITMOS
+Introdução;
+Tipos de dados;
+Operadores de escolhas e repetições;
+Funções;
+Manopulação de textos;
+Armazenando dados em listas.
+
+
+HTML
+Conceitos do HTML;
+Configurando o ambiente;
+Estruturando Layout;
+Trabalhando com tags.
+
+
+CSS
+Conceitos do CSS;
+Funcionamento;
+Estilizando tags HTML;
+Implementando Classes e Id's;
+Seletores.
+
+
+DESIGN RESPONSIVO
+Conceitos de Design Responsivo;
+Unidades de medida;
+Trabalhando com viewport;
+Grid View;
+Media Queries;
+Imagem e vídeos responsivos;
+Bootstrap.
+
+
+JAVASCRIPT
+Conceitos do JS;
+Varíaveis;
+Estrutura condicional;
+Operadores lógicos e relacionais;
+Estrutura de escolha;
+Laços de repetição;
+Vetores;
+Objetos;
+Eventos;
+Funções.
+
+
+TYPESCRIPT
+Conceitos da linguagem;
+Arquitetura;
+Configurando o ambiente;
+Classes;
+Atributos;
+Métodos;
+Construtor;
+Encapsulamento;
+Herança;
+Interface.
+
+NODE
+Conceitos de NodeJS;
+Arquitetura;
+Configurando o ambiente;
+Módulos;
+Utilizando o Express;
+Rotas;
+Nodemon;
+Sequelize;
+Handlebars;
+Criando APIs.
+
+REACT
+Conceitos de ReactJS;
+Casos de uso;
+Arquitetura;
+Utilizando o padrão SPA;
+Trabalhando com JSX;
+Componentes;
+Utilizando Props e States;
+Rotas.
+
+ANGULAR
+Conceitos de Angular;
+Estrutura de arquivos;
+Utilizando o padrao SPA;
+Componentes;
+Módulos;
+Data Binding;
+Manipulando rotas;
+Manipulando APIs.
+
+
+Foram muitas horas de estudo, além do que foi visto na sala de aula, e após o fim do curso tenho buscado aprofundar meus conhecimentos nas tecnologias vistas no curso.
